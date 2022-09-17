@@ -18,22 +18,22 @@ function Footer() {
             <div className={cx('heading')}>Danh Mục Nổi Bật</div>
             <div className={cx('footer-link')}>
               <div className={cx('link')}>
-                <Link to="/">Giới thiệu</Link>
+                <Link to="/about">Giới thiệu</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/">Báo giá khuyến mãi</Link>
+                <Link to="/quote">Báo giá khuyến mãi</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/">Album ảnh cưới đẹp</Link>
+                <Link to="/dich-vu/anh-tre-con">Ảnh trẻ con</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/">Váy cưới Romantic Love</Link>
+                <Link to="/dich-vu/album-anh-cuoi">Album Romantic Love</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/">Tráp ăn hỏi</Link>
+                <Link to="/dich-vu/trap-an-hoi">Tráp ăn hỏi</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/">Ảnh trẻ con</Link>
+                <Link to="/admin">Admin Cp</Link>
               </div>
             </div>
           </div>
