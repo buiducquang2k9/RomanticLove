@@ -1,0 +1,40 @@
+.wrapper {
+  width: var(--content-width);
+  margin: 100px auto 30px auto;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  & img {
+    width: 650px;
+  }
+  margin: 0 auto;
+}
+.text {
+  font-size: 19px;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #777;
+  font-weight: 400;
+}
+.heading {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+}
+.title {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #777;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

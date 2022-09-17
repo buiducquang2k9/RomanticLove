@@ -1,0 +1,40 @@
+.wrapper {
+  width: var(--content-width);
+  margin: 100px auto 30px auto;
+  & .content {
+    text-align: center;
+  }
+  & .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    & .item {
+      margin: 20px;
+      flex: 46%;
+      & .item-title {
+        height: 70px;
+      }
+      & .heading {
+        font-size: 30px;
+        color: #333;
+        position: relative;
+        margin-bottom: 10px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #555;
+          height: 5px;
+          width: 100px;
+        }
+      }
+      & .title {
+        font-size: 15px;
+        color: #999;
+      }
+    }
+  }
+}

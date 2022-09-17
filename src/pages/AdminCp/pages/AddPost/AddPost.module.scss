@@ -1,0 +1,328 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  & .btn-addPost {
+    position: fixed;
+    right: 20px;
+    top: 0;
+  }
+  & form {
+    padding: 5px;
+    flex: 50%;
+    height: 100%;
+    border-right: 1px solid #1e272e;
+    & .input-title {
+      width: 100%;
+      padding: 10px 10px;
+      font-weight: 700;
+      font-size: 20px;
+      border-bottom: 1px solid #999;
+    }
+    & .tool-post {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 0 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    & .tool-icon {
+      padding: 5px 20px;
+      text-align: center;
+      flex: 13%;
+      &:hover {
+        background-color: #1e272e;
+      }
+      &:hover svg path {
+        fill: #fff;
+      }
+    }
+    & .post-editor {
+      width: 100%;
+      height: 90%;
+      outline: none;
+      border: none;
+      font-size: 15px;
+    }
+  }
+  & .post-view {
+    flex: 50%;
+    height: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+}
+
+// Markdown css
+* {
+  font-weight: 300;
+}
+.post-view table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+.post-view hr {
+  background-color: #ddd;
+  border: transparent;
+  height: 1px;
+  margin: 40px 0;
+}
+.post-view p {
+  font-size: 1.8rem;
+  word-wrap: break-word;
+  color: #292929;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.post-view td,
+.post-view th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.post-view td {
+  color: #555;
+  font-weight: 400;
+  font-size: 13px;
+}
+.post-view th {
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
+.post-view img {
+  max-width: 100%;
+  padding: 10px 0;
+  margin: auto;
+}
+.post-view tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.post-view blockquote {
+  border-left: 3px solid #1e272e;
+  margin-left: 0;
+  padding: 0 0 2px 15px;
+  background-color: #fdfdfd;
+  & p {
+    color: #757575;
+    margin: 0;
+  }
+}
+.post-view ul,
+.post-view ol {
+  word-wrap: break-word;
+  color: #292929;
+  font-size: 1.8rem;
+  font-size: 1.8rem;
+  line-height: 2;
+  line-height: 2;
+  padding-left: 50px;
+}
+.post-view h1 {
+  font-weight: 600;
+  font-size: 4em;
+  margin: 21.44px 0;
+}
+.post-view h2 {
+  font-weight: 600;
+  font-size: 3.5em;
+  margin: 19.92px 0;
+}
+.post-view h3 {
+  font-weight: 600;
+  font-size: 2.17em;
+  margin: 18.72px 0;
+}
+.post-view h4 {
+  font-weight: 600;
+  font-size: 1.6em;
+  margin: 21.28px 0;
+}
+.post-view h5 {
+  font-weight: 600;
+  font-size: 1.33em;
+  margin: 22.1776px 0;
+}
+.post-view h6 {
+  font-weight: 300;
+  font-size: 0.87em;
+  margin: 24.9776px 0;
+}
+.post-view strong {
+  font-weight: 600;
+}
+.post-view a[href] {
+  color: #f05123;
+  text-decoration: underline;
+}
+// Other editor
+.other-editor {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  & .other-editor-form {
+    overflow-y: scroll;
+    max-height: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 100px auto;
+    & .other-editor-heading {
+      font-size: 30px;
+      text-align: center;
+      padding: 5px 0px;
+      font-weight: 900;
+    }
+    & .other-editor-item {
+      padding: 10px;
+      & label {
+        font-size: 15px;
+        display: block;
+      }
+      & input {
+        border: 1px solid #ddd;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      & textarea {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 100px;
+        max-height: 100px;
+      }
+      & .other-editor-img-view {
+        padding: 10px 0;
+        width: 100%;
+        border-radius: 10px;
+      }
+      & .progress-img-view {
+        width: 0;
+        margin-top: 5px;
+        height: 5px;
+        background-image: linear-gradient(to right, #e55d87, #5fc3e4);
+      }
+      & .loading-img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .loading {
+          width: 50px;
+          height: 50px;
+          border-radius: 100rem;
+          border: 2px solid #e74c3c;
+          border-top: transparent;
+          border-bottom: transparent;
+          animation: spin 1s ease infinite;
+        }
+      }
+    }
+    & .other-editor-submit {
+      display: block;
+      margin: auto;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #130f40;
+      color: #dff9fb;
+    }
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+// btn submit
+.btn {
+  --body-bg: #fff;
+  --btn-gradient: linear-gradient(109.6deg, rgba(45, 116, 213, 1) 11.2%, rgba(121, 137, 212, 1) 91.2%);
+  --btn-txt-color: #dfe6e9;
+  position: relative;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.btn-animation {
+  border-radius: 5px;
+}
+
+.btn-animation:hover {
+  cursor: pointer;
+}
+
+.btn-animation span {
+  display: block;
+}
+
+.btn-animation span:nth-child(1) {
+  padding: 2rem 6.5rem;
+  background-image: var(--btn-gradient);
+  border-radius: 5px;
+}
+
+.btn-animation span:nth-child(2),
+.btn-animation span:nth-child(3),
+.btn-animation span:nth-child(4) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-animation span:nth-child(4) {
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--btn-gradient);
+  color: var(--btn-txt-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.btn-animation:hover span:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.btn-animation span:nth-child(3) {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background-color: var(--body-bg);
+  border-radius: 4px;
+}
+
+.btn-animation span:nth-child(2) {
+  height: 60%;
+  width: 100%;
+  background-color: var(--body-bg);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}

@@ -1,0 +1,97 @@
+.wrapper {
+  width: 100%;
+  background-color: var(--black-color);
+  & .footer-list {
+    padding: 30px 0;
+    width: var(--content-width);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & .footer-item {
+      padding-right: 50px;
+      & .heading {
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--white-color);
+        padding-bottom: 15px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50px;
+          height: 5px;
+          background-color: rgba(255, 255, 255, 0.582);
+        }
+      }
+      & .footer-link {
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 15px;
+        & .link {
+          padding-top: 10px;
+        }
+        & a {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+}
+.footer-contact-item {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+}
+.footer-item {
+  &.contact {
+    flex: 29%;
+  }
+  &.hightlight {
+    flex: 37%;
+  }
+  &.social {
+    flex: 27%;
+    & .footer-link {
+      color: var(--white-color);
+      & .socialItem {
+        height: 50px;
+        line-height: 50px;
+        &:first-child {
+          background-color: #3498db;
+        }
+        &:nth-child(2) {
+          background-color: #e74c3c;
+        }
+        &:nth-child(3) {
+          background-color: #2ecc71;
+        }
+        &:last-child {
+          background-color: #2980b9;
+        }
+        & .icon {
+          padding-right: 20px;
+          font-size: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+.footer-contact-item-content {
+  padding: 5px 0 5px 10px;
+}
+.footer-contact-item-content h4 {
+  color: var(--white-color);
+  font-weight: 300;
+  font-size: 15px;
+}
+.no-copy {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: var(--white-color);
+}

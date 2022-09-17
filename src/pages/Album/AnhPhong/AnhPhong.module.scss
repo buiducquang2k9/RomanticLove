@@ -1,0 +1,33 @@
+.container {
+  margin: 100px auto 20px auto;
+  width: var(--content-width);
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2px;
+  & .container2 {
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    padding: 0 20px;
+  }
+  & .heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  & .wrapper {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    & .img {
+      flex: 30%;
+      margin: 5px 5px;
+    }
+  }
+}

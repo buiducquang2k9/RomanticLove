@@ -1,0 +1,116 @@
+.wrapper {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border-color: transparent transparent rgba(32, 32, 32, 0.1) transparent;
+  border-style: solid;
+  background-color: transparent;
+  z-index: 1;
+  &.over {
+    background-color: var(--black-color);
+    border: none;
+    min-height: 60px;
+  }
+}
+.container {
+  width: var(--content-width);
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  & .logo-title {
+    color: var(--black-color);
+    &.over {
+      color: var(--white-color);
+    }
+  }
+  & .menu {
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-color);
+    & .menu-link {
+      padding: 0 15px;
+      font-size: 13px;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      & a {
+        color: var(--black-color);
+        font-weight: 700;
+      }
+      &.over a {
+        color: var(--white-color);
+      }
+    }
+    & .menu-link-icon {
+      padding: 0 5px;
+      font-size: 13px;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      & a {
+        color: var(--black-color);
+      }
+      &.over a {
+        color: var(--white-color);
+      }
+    }
+  }
+  & .logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+.menu-drop {
+  position: relative;
+  &:hover .drop-down {
+    display: block;
+  }
+  & .drop-down {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      background-color: transparent;
+      height: 30px;
+      width: 27%;
+      left: 9px;
+    }
+    position: absolute;
+    width: 260%;
+    top: 100%;
+    left: 0;
+    padding: 10px 0 10px 10px;
+    transform: translateY(10px);
+    display: none;
+    & .menu-link {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    background-color: var(--white-color);
+  }
+}
+.menu-link.menu-hover:hover {
+  text-decoration: underline;
+}
+.menu-link.over .drop-down {
+  background-color: var(--black-color);
+}
