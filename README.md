@@ -5,7 +5,7 @@
 
     git add .
 
-    git commit -m "Quang"
+    git commit -m "Update"
 
     git push
 ```
