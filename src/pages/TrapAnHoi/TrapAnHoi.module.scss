@@ -1,5 +1,5 @@
 .wrapper {
-  width: var(--content-width);
+  max-width: var(--content-width);
   margin: 100px auto 30px auto;
   & .content {
     text-align: center;
@@ -12,6 +12,9 @@
     grid-template-columns: repeat(2, 1fr);
     & .item {
       margin: 20px;
+      & img {
+        border-radius: 20px;
+      }
       & .item-title {
         height: 70px;
       }
@@ -26,13 +29,84 @@
           top: 100%;
           left: 0;
           background-color: #555;
-          height: 5px;
+          height: 3px;
           width: 100px;
         }
       }
       & .title {
         font-size: 15px;
         color: #999;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    & .content {
+      text-align: center;
+      font-size: 14px;
+    }
+    & .list {
+      grid-gap: 20px;
+      & .item {
+        margin: 10px;
+        & .title {
+          font-size: 13px;
+        }
+        & .heading {
+          font-size: 25px;
+          color: #333;
+          position: relative;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper {
+    & .content {
+      text-align: center;
+      font-size: 12px;
+    }
+    & .list {
+      grid-gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      & .item {
+        margin: 20px 0;
+        padding: 20px;
+        & .title {
+          font-size: 12px;
+        }
+        & .heading {
+          font-size: 23px;
+          color: #333;
+          position: relative;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .wrapper {
+    & .content {
+      text-align: center;
+      font-size: 10px;
+    }
+    & .list {
+      & .item {
+        padding: 10px;
+        margin: 5px 0;
+        & .title {
+          font-size: 10px;
+        }
+        & .heading {
+          font-size: 21px;
+          color: #333;
+          position: relative;
+          margin-bottom: 10px;
+        }
       }
     }
   }

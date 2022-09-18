@@ -1,6 +1,6 @@
 .wrapper {
   margin: 100px auto 20px auto;
-  width: var(--content-width);
+  max-width: var(--content-width);
   & .heading {
     text-align: center;
     font-size: 30px;
@@ -46,6 +46,51 @@
           &:hover {
             text-decoration: underline;
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    & .heading {
+      font-size: 28px;
+    }
+    & .album-list {
+      & .title {
+        & a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper {
+    & .heading {
+      font-size: 25px;
+    }
+    & .album-list {
+      & .album-item {
+        flex: 100%;
+      }
+      & .title {
+        & a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .wrapper {
+    & .heading {
+      font-size: 23px;
+    }
+    & .album-list {
+      & .title {
+        & a {
+          font-size: 13px;
         }
       }
     }

@@ -44,14 +44,14 @@ function Footer() {
                 <FontAwesomeIcon icon={faLocationDot} />
                 <div className={cx('footer-contact-item-content')}>
                   <h4>- Cơ Sở 1:</h4>
-                  <h4>Nam Định, TT.Xuân Trường, Tổ 14</h4>
+                  <h4>Tổ 14, TT.Xuân Trường, Xuân Trường, Nam Định</h4>
                 </div>
               </div>
               <div className={cx('footer-contact-item')}>
                 <FontAwesomeIcon icon={faLocationDot} />
                 <div className={cx('footer-contact-item-content')}>
                   <h4>- Cơ Sở 2:</h4>
-                  <h4>Nam Định, Trực Ninh, TT.Cát Thành, Cầu Cao </h4>
+                  <h4>Cầu Cao, TT.Cát Thành, Trực Ninh, Nam Định</h4>
                 </div>
               </div>
               <div className={cx('footer-contact-item')}>
