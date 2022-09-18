@@ -1,15 +1,11 @@
 .container {
   margin: 100px auto 20px auto;
-  width: var(--content-width);
-  border-right: 1px solid #333;
-  border-left: 1px solid #333;
+  max-width: var(--content-width);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 2px;
   & .container2 {
-    border-right: 1px solid #333;
-    border-left: 1px solid #333;
     padding: 0 20px;
   }
   & .heading {
@@ -28,6 +24,30 @@
     & .img {
       flex: 30%;
       margin: 5px 5px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    margin: 100px 20px 50px 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    & .wrapper {
+      & .img {
+        flex: 40%;
+        margin: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    & .wrapper {
+      & .img {
+        flex: 100%;
+      }
     }
   }
 }
