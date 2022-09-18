@@ -114,3 +114,53 @@
 .menu-link.over .drop-down {
   background-color: var(--black-color);
 }
+@media screen and (max-width: 800px) {
+  .wrapper {
+    min-height: 60px;
+    &.over {
+      min-height: 50px;
+    }
+  }
+  .container {
+    & .logo-title {
+      font-size: 20px;
+    }
+    & .menu {
+      & .menu-link {
+        font-size: 10px;
+      }
+      & .menu-link-icon {
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    display: block;
+    & .logo-title {
+      display: none;
+    }
+    & .menu {
+      padding: 0;
+      & .menu-link {
+        font-size: 8px;
+      }
+      & .menu-link-icon {
+        font-size: 8px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    & .menu {
+      & .menu-link {
+        font-size: 7px;
+      }
+      & .menu-link-icon {
+        font-size: 7px;
+      }
+    }
+  }
+}

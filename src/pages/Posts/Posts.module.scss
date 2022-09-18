@@ -1,9 +1,6 @@
 .wrapper {
   margin: 100px auto;
   max-width: calc(var(--content-width) + 500px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: grid;
   grid-gap: 50px;
   grid-template-columns: repeat(3, 1fr);
@@ -13,7 +10,6 @@
     border-radius: 16px;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     margin: 30px;
-    float: left;
     height: 100%;
   }
   & .post-author {

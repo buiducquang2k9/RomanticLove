@@ -3,16 +3,15 @@
   margin: 100px auto 30px auto;
   & .content {
     text-align: center;
+    font-size: 16px;
   }
   & .list {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
     & .item {
       margin: 20px;
-      flex: 46%;
       & .item-title {
         height: 70px;
       }
