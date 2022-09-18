@@ -22,14 +22,15 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.35.0",
     "react-markdown": "^8.0.3",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
     "react-slideshow-image": "^4.0.2",
     "react-toastify": "^9.0.8",
     "remark-gfm": "^3.0.1",
     "serve": "^14.0.1",
     "serve-build": "^0.1.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-router": "^3.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",

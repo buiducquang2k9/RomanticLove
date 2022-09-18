@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styles from './Posts.module.scss';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { collection, onSnapshot } from 'firebase/firestore';
 import { firestoreDB } from '../AdminCp/pages/AddPost/firebase-config';
 import ReactMarkdown from 'react-markdown';
