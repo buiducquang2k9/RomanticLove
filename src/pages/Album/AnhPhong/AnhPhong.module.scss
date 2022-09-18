@@ -30,6 +30,9 @@
 @media screen and (max-width: 800px) {
   .container {
     margin: 100px 20px 50px 20px;
+    & .heading {
+      font-size: 25px;
+    }
   }
 }
 @media screen and (max-width: 450px) {
@@ -40,6 +43,9 @@
         margin: 5px;
       }
     }
+    & .heading {
+      font-size: 20px;
+    }
   }
 }
 @media screen and (max-width: 380px) {
@@ -48,6 +54,9 @@
       & .img {
         flex: 100%;
       }
+    }
+    & .heading {
+      font-size: 18px;
     }
   }
 }
