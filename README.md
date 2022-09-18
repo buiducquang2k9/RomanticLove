@@ -1,6 +1,8 @@
 # Cách để push lên github
 
 ```
+    npm run deploy
+
     git status
 
     git add .
