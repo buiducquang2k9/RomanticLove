@@ -2,6 +2,7 @@
   margin: 100px auto;
   max-width: calc(var(--content-width) + 500px);
   display: grid;
+  padding: 20px;
   grid-gap: 50px;
   grid-template-columns: repeat(3, 1fr);
   & .post-item {
@@ -9,7 +10,6 @@
     background-color: #fff;
     border-radius: 16px;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    margin: 30px;
     height: 100%;
   }
   & .post-author {
@@ -19,7 +19,7 @@
     & img {
       object-fit: cover;
       width: 100%;
-      height: 260px;
+      height: 240px;
       border-radius: 16px;
       &:hover {
         transform: scale(1.05);
@@ -83,8 +83,8 @@
   font-size: 1.8rem;
   word-wrap: break-word;
   color: #292929;
-  font-size: 1.8rem;
   line-height: 2;
+  padding: 10px 0;
 }
 .post-view .post-view-heading {
   font-size: 50px;
@@ -177,9 +177,11 @@
   font-size: 50px;
   padding: 160px 0;
   font-weight: 900;
+  grid-column: 1/4;
+  text-align: center;
 }
 .post-view-info {
-  width: 300px;
+  width: auto;
   padding: 10px;
   margin: 50px 20px 10px 0;
   border-radius: 16px;
@@ -200,6 +202,63 @@
     color: #0652dd;
     & span {
       color: #009432;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .No-posts {
+    font-size: 40px;
+  }
+  .wrapper {
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    & .post-body {
+      & .post-title {
+        font-size: 15px;
+      }
+    }
+    & .post-author {
+      & img {
+        height: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .No-posts {
+    font-size: 30px;
+  }
+  .wrapper {
+    grid-gap: 10px 0;
+    grid-template-columns: repeat(1, 1fr);
+    & .post-body {
+      & .post-title {
+        font-size: 15px;
+      }
+    }
+    & .post-author {
+      & img {
+        height: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .No-posts {
+    font-size: 20px;
+  }
+  .wrapper {
+    grid-gap: 10px 0;
+    grid-template-columns: repeat(1, 1fr);
+    & .post-body {
+      & .post-title {
+        font-size: 13px;
+      }
+    }
+    & .post-author {
+      & img {
+        height: 170px;
+      }
     }
   }
 }

@@ -29,7 +29,6 @@ function Posts() {
     fetchData();
   }, []);
   const [postKey, setPostKey] = useState(-1);
-  console.log(postKey);
   return (
     <div className={cx('wrapper')}>
       {posts.length > 0 ? (

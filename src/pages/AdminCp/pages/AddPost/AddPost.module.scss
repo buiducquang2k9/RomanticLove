@@ -73,11 +73,11 @@
   margin: 40px 0;
 }
 .post-view p {
-  font-size: 1.8rem;
   word-wrap: break-word;
   color: #292929;
   font-size: 1.8rem;
   line-height: 2;
+  padding: 10px 0;
 }
 .post-view td,
 .post-view th {
@@ -104,10 +104,11 @@
   background-color: #dddddd;
 }
 .post-view blockquote {
-  border-left: 3px solid #1e272e;
+  border-left: 3px solid #ff8bb3;
   margin-left: 0;
   padding: 0 0 2px 15px;
   background-color: #fdfdfd;
+
   & p {
     color: #757575;
     margin: 0;
@@ -308,21 +309,4 @@
   height: calc(100% - 4px);
   background-color: var(--body-bg);
   border-radius: 4px;
-}
-
-.btn-animation span:nth-child(2) {
-  height: 60%;
-  width: 100%;
-  background-color: var(--body-bg);
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
 }
