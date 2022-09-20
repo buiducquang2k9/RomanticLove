@@ -1,9 +1,15 @@
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
+import LogoTongQuan from './../../assets/images/TongQuanLogo.jpg';
+import AlbumTongQuan from './../../assets/images/TongQuanAlbum.jpg';
 
 const cx = classNames.bind(styles);
 function Home() {
   document.title = 'Áo cưới Romantic Love';
+  const handleClickSwitchPage = () => {
+    window.scroll(0, 0);
+  };
   return (
     <div className={cx('wrapper')}>
       <div className={cx('container', 'mainBack')}>
@@ -11,25 +17,25 @@ function Home() {
           <h1>Tổng quan về Romantic Love</h1>
           <div className={cx('tongQuan-list')}>
             <div className={cx('tongQuan-item')}>
-              <a href="https://youtube.com">
-                <img src="https://anhvienmimosa.com/wp-content/uploads/2022/01/anh3-1.jpg" alt="" />
+              <Link to="/about" onClick={handleClickSwitchPage}>
+                <img src={LogoTongQuan} alt="" />
                 Giới Thiệu
-              </a>
+              </Link>
             </div>
             <div className={cx('tongQuan-item')}>
-              <a href="https://youtube.com">
-                <img src="https://anhvienmimosa.com/wp-content/uploads/2022/01/anh2-1-2000x2000.jpg" alt="" />
+              <Link to="/dich-vu/album-anh-cuoi" onClick={handleClickSwitchPage}>
+                <img src={AlbumTongQuan} alt="" />
                 Album Ảnh Cưới
-              </a>
+              </Link>
             </div>
             <div className={cx('tongQuan-item')}>
-              <a href="https://youtube.com">
+              <a href="https://www.facebook.com/AoCuoiRomanticLove">
                 <img src="https://anhvienmimosa.com/wp-content/uploads/2017/03/fanpage.png" alt="" />
                 Fanpage Facebook
               </a>
             </div>
             <div className={cx('tongQuan-item')}>
-              <a href="https://youtube.com">
+              <a href="youtube.com/channel/UCFCfdQwxMtLbVLdpAZZ8PzQ">
                 <img src="https://anhvienmimosa.com/wp-content/uploads/2021/11/youtube.png" alt="" />
                 Romantic Love Wedding
               </a>

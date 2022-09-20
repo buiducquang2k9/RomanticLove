@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
     & .album-item {
       //   width: 360px;
       //   height: 380px;
@@ -51,6 +52,38 @@
     }
   }
 }
+.view-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  overflow-y: scroll;
+  & .view-img-content {
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    width: 50%;
+    margin: auto;
+    grid-gap: 20px;
+    & .img-view {
+      display: block;
+      flex: 30%;
+    }
+    & .btn {
+      z-index: 100000;
+      position: fixed;
+      top: 0;
+      right: 20px;
+      font-size: 20px;
+    }
+  }
+}
 @media screen and (max-width: 800px) {
   .wrapper {
     & .heading {
@@ -59,6 +92,14 @@
     & .album-list {
       & .title {
         & a {
+          font-size: 18px;
+        }
+      }
+    }
+    .view-img {
+      & .view-img-content {
+        width: 100%;
+        & .btn {
           font-size: 18px;
         }
       }
@@ -80,6 +121,14 @@
         }
       }
     }
+    .view-img {
+      & .view-img-content {
+        width: 100%;
+        & .btn {
+          font-size: 15px;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 380px) {
@@ -91,6 +140,14 @@
       & .title {
         & a {
           font-size: 13px;
+        }
+      }
+    }
+    .view-img {
+      & .view-img-content {
+        width: 100%;
+        & .btn {
+          font-size: 15px;
         }
       }
     }
