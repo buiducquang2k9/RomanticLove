@@ -6,18 +6,19 @@
   height: 100%;
   background-color: #fff;
   & .form {
-    border: 3px solid #dcdde1;
-    background-color: rgb(221, 221, 221, 0.3);
+    border: 1px solid #fff;
     width: 350px;
-    padding: 100px 20px;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
+    z-index: 12;
     & .form-heading {
       font-weight: 900;
       text-align: center;
       font-size: 30px;
       color: #18273b;
       text-transform: uppercase;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
     & .input-item {
       width: 100%;
@@ -29,16 +30,21 @@
         font-weight: 500;
       }
       & input {
-        border: 2px solid transparent;
+        border: 2px solid;
+        border-color: transparent transparent #000 transparent;
         padding: 5px 20px;
         width: 100%;
         font-size: 15px;
-        color: #ddd;
+        color: #000;
         font-weight: 600;
-        border-radius: 5px;
         margin-top: 10px;
+        background-color: transparent;
+        z-index: 100;
         &:focus {
-          border: 2px solid #ddd;
+          border: 2px solid #000;
+          & .input-label {
+            transform: translateY(0px);
+          }
         }
       }
     }
@@ -50,8 +56,40 @@
       width: 100%;
       border-radius: 10px;
       margin-top: 30px;
-      margin-bottom: 20px;
       font-weight: 800;
     }
+  }
+}
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(160px);
+}
+.card span {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 250px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  transform-origin: 125px 0;
+  transform: rotate(calc(90deg * var(--i)));
+  filter: blur(80px);
+  opacity: 0.75;
+  z-index: 1;
+  &:nth-child(1) {
+    background-color: #01b2fe;
+  }
+  &:nth-child(2) {
+    background-color: #ff008c;
+  }
+  &:nth-child(3) {
+    background-color: #ffcd00;
+  }
+  &:nth-child(4) {
+    background-color: #00c456;
   }
 }

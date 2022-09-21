@@ -71,72 +71,82 @@ function AlbumAnhCuoi() {
   const albumList = [
     {
       name: 'Album ảnh cưới đẹp Cần Thơ',
-      album1: album1_1,
-      album2: album1_2,
-      album3: album1_3,
-      album4: album1_4,
-      album5: album1_5,
-      album6: album1_6,
-      album7: album1_7,
-      album8: album1_8,
-      album9: album1_9,
-      album10: album1_10,
-      album11: album1_11,
-      album12: album1_12,
-      album13: album1_13,
-      album14: album1_14,
-      album15: album1_15,
-      album16: album1_16,
-      album17: album1_17,
-      album18: album1_18,
-      album19: album1_19,
-      album20: album1_20,
+      avatar: album1_1,
+      album: [
+        album1_1,
+        album1_2,
+        album1_3,
+        album1_4,
+        album1_5,
+        album1_6,
+        album1_7,
+        album1_8,
+        album1_9,
+        album1_10,
+        album1_11,
+        album1_12,
+        album1_13,
+        album1_14,
+        album1_15,
+        album1_16,
+        album1_17,
+        album1_18,
+        album1_19,
+        album1_20,
+      ],
     },
     {
       name: 'Album ảnh cưới đẹp Nam Định',
-      album1: album2_1,
-      album2: album2_2,
-      album3: album2_3,
-      album4: album2_4,
-      album5: album2_5,
-      album6: album2_6,
-      album7: album2_7,
-      album8: album2_8,
-      album9: album2_9,
-      album10: album2_10,
-      album11: album2_11,
-      album12: album2_12,
-      album13: album2_13,
-      album14: album2_14,
-      album15: album2_15,
-      album16: album2_16,
-      album17: album2_17,
-      album18: album2_18,
-      album19: album2_19,
-      album20: album2_20,
+      avatar: album2_1,
+      album: [
+        album2_1,
+        album2_1,
+        album2_2,
+        album2_3,
+        album2_4,
+        album2_5,
+        album2_6,
+        album2_7,
+        album2_8,
+        album2_9,
+        album2_10,
+        album2_11,
+        album2_12,
+        album2_13,
+        album2_14,
+        album2_15,
+        album2_16,
+        album2_17,
+        album2_18,
+        album2_19,
+        album2_20,
+      ],
     },
     {
       name: 'Album ảnh cưới đẹp Hà Nội',
-      album1: album3_1,
-      album2: album3_2,
-      album3: album3_3,
-      album4: album3_4,
-      album5: album3_5,
-      album6: album3_6,
-      album7: album3_7,
-      album8: album3_8,
-      album9: album3_9,
-      album10: album3_10,
-      album11: album3_11,
-      album12: album3_12,
-      album13: album3_13,
-      album14: album3_14,
-      album15: album3_15,
-      album16: album3_16,
-      album17: album3_17,
-      album18: album3_18,
-      album19: album3_19,
-      album20: album3_20,
+      avatar: album3_1,
+      album: [
+        album3_1,
+        album3_2,
+        album3_3,
+        album3_4,
+        album3_5,
+        album3_6,
+        album3_7,
+        album3_8,
+        album3_9,
+        album3_10,
+        album3_11,
+        album3_12,
+        album3_13,
+        album3_14,
+        album3_15,
+        album3_16,
+        album3_17,
+        album3_18,
+        album3_19,
+        album3_20,
+      ],
     },
   ];
   const [keyImg, setKeyImg] = useState(-1);
@@ -146,10 +156,10 @@ function AlbumAnhCuoi() {
       <div className={cx('album-list')}>
         {albumList.map((albumItem, index) => {
           return (
-            <>
-              <div className={cx('album-item')} key={index} onClick={() => setKeyImg(index)}>
+            <div key={index}>
+              <div className={cx('album-item')} onClick={() => setKeyImg(index)}>
                 <div className={cx('img')}>
-                  <img src={albumItem.album1} alt={albumItem.name} />
+                  <img src={albumItem.avatar} alt={albumItem.name} />
                 </div>
                 <div className={cx('title')}>
                   <Link>{albumItem.name}</Link>
@@ -158,66 +168,13 @@ function AlbumAnhCuoi() {
               {keyImg === index ? (
                 <div className={cx('view-img')} key={index + 1}>
                   <div className={cx('view-img-content')}>
-                    <div className="img-view">
-                      <img alt={albumItem.name} src={albumItem.album1} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album2} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album3} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album4} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album5} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album6} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album7} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album8} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album9} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album10} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album11} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album12} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album13} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album14} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album15} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album16} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album17} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album18} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album19} />
-                    </div>
-                    <div className={cx('img-view')}>
-                      <img alt={albumItem.name} src={albumItem.album20} />
-                    </div>
+                    {albumItem.album.map((album, index) => {
+                      return (
+                        <div className="img-view" key={index + 2}>
+                          <img alt={albumItem.name} src={album} />
+                        </div>
+                      );
+                    })}
                     <div className={cx('btn')} onClick={() => setKeyImg(-1)}>
                       <FontAwesomeIcon icon={faClose} />
                     </div>
@@ -226,7 +183,7 @@ function AlbumAnhCuoi() {
               ) : (
                 <></>
               )}
-            </>
+            </div>
           );
         })}
       </div>

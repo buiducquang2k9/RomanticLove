@@ -46,7 +46,7 @@ function AddPost() {
     setInput(p + '\n\n~~abc~~');
   };
   const handleListDots = () => {
-    setInput(p + '\n\n* abc\n\n *');
+    setInput(p + '\n\n* abc\n\n*');
   };
   const handleListNum = () => {
     setInput(p + '\n\n1. abc\n\n2.');

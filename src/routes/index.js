@@ -9,6 +9,7 @@ import TrapAnHoi from '~/pages/TrapAnHoi';
 import AnhDaNgoai from '~/pages/Album/AnhDaNgoai';
 import AnhPhong from '~/pages/Album/AnhPhong';
 import AdminCp from '~/pages/AdminCp';
+import PageNotFound from '~/pages/PageNotFound';
 // Public routes
 const publicRoutes = [
   { path: '/', component: Home },
@@ -21,6 +22,7 @@ const publicRoutes = [
   { path: '/album/anh-da-ngoai', component: AnhDaNgoai, layout: 'OnlyHeaderFooter' },
   { path: '/album/anh-phong', component: AnhPhong, layout: 'OnlyHeaderFooter' },
   { path: '/admin/*', component: AdminCp, layout: 'Null' },
+  { path: '/*', component: PageNotFound, layout: 'Null' },
 ];
 const privateRoutes = [];
 

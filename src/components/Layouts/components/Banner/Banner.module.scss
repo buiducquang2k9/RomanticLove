@@ -2,5 +2,12 @@
   padding-bottom: 10px;
   & img {
     width: 100%;
+    object-fit: cover;
   }
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 450px) {
+}
+@media screen and (max-width: 380px) {
 }

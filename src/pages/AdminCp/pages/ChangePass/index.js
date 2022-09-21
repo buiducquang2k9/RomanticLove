@@ -31,10 +31,34 @@ function ChangePass() {
   };
   return (
     <div className={cx('change-content')}>
+      <div className={cx('card')}>
+        <span
+          style={{
+            '--i': '0',
+          }}
+        ></span>
+        <span
+          style={{
+            '--i': '1',
+          }}
+        ></span>
+        <span
+          style={{
+            '--i': '2',
+          }}
+        ></span>
+        <span
+          style={{
+            '--i': '3',
+          }}
+        ></span>
+      </div>
       <div className={cx('form')}>
         <div className={cx('form-heading')}>Change User</div>
         <div className={cx('input-item')}>
-          <label htmlFor="username">Username</label>
+          <label className={cx('input-label')} htmlFor="username">
+            Username
+          </label>
           <input
             type="text"
             name="username"
@@ -42,7 +66,9 @@ function ChangePass() {
           />
         </div>
         <div className={cx('input-item')}>
-          <label htmlFor="password">Password</label>
+          <label className={cx('input-label')} htmlFor="password">
+            Password
+          </label>
           <input
             type="text"
             name="password"
