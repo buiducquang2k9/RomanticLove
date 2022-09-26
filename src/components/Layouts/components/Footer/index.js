@@ -33,7 +33,7 @@ function Footer() {
                 <Link to="/dich-vu/trap-an-hoi">Tráp ăn hỏi</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/admin">Admin Cp</Link>
+                <Link to="/posts">Bài Viết</Link>
               </div>
             </div>
           </div>

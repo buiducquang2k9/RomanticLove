@@ -23,7 +23,6 @@ const publicRoutes = [
   { path: '/album/anh-phong', component: AnhPhong, layout: 'OnlyHeaderFooter' },
   { path: '/admin/*', component: AdminCp, layout: 'Null' },
   { path: '/*', component: PageNotFound, layout: 'Null' },
-  { path: '/*/*', component: PageNotFound, layout: 'Null' },
 ];
 const privateRoutes = [];
 
