@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.48efd82c.css",
-    "main.js": "./static/js/main.9ff9474f.js",
+    "main.css": "./static/css/main.1e6af6d8.css",
+    "main.js": "./static/js/main.6b2ad15c.js",
     "static/js/787.c1573e15.chunk.js": "./static/js/787.c1573e15.chunk.js",
     "static/media/TongQuanAlbum.jpg": "./static/media/TongQuanAlbum.abef8f8dafe0bd99b39e.jpg",
     "static/media/Banner.jpg": "./static/media/Banner.7d8fbe26c490d34c843c.jpg",
@@ -68,12 +68,12 @@
     "static/media/TongQuanLogo.jpg": "./static/media/TongQuanLogo.fe41719cb5409cfaa653.jpg",
     "static/media/album1 (16).jpg": "./static/media/album1 (16).5d7f2d8076db910870f8.jpg",
     "index.html": "./index.html",
-    "main.48efd82c.css.map": "./static/css/main.48efd82c.css.map",
-    "main.9ff9474f.js.map": "./static/js/main.9ff9474f.js.map",
+    "main.1e6af6d8.css.map": "./static/css/main.1e6af6d8.css.map",
+    "main.6b2ad15c.js.map": "./static/js/main.6b2ad15c.js.map",
     "787.c1573e15.chunk.js.map": "./static/js/787.c1573e15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48efd82c.css",
-    "static/js/main.9ff9474f.js"
+    "static/css/main.1e6af6d8.css",
+    "static/js/main.6b2ad15c.js"
   ]
 }
