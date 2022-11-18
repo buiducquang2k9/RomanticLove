@@ -9,6 +9,7 @@ import { firestoreDB } from '../AdminCp/pages/AddPost/firebase-config';
 
 const cx = classNames.bind(styles);
 function AdminCp() {
+  document.title = 'Admin Cp Login';
   const [pass, setPass] = useState([]);
   useEffect(() => {
     async function fetchData() {
