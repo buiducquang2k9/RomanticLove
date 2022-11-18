@@ -21,8 +21,8 @@ function Header() {
     window.addEventListener('scroll', handleScroll);
   }, []);
   const handleClickSwitchPage = () => {
+    setToggle(false);
     window.scroll(0, 0);
-    setDropToggle(!dropToggle);
   };
   const [toggle, setToggle] = useState(false);
   const [dropToggle, setDropToggle] = useState(false);
@@ -31,54 +31,52 @@ function Header() {
       <div className={cx('container')}>
         <div className={cx('logo-title', windowY ? 'over' : '')}>Áo cưới Romantic Love</div>
         <nav className={cx('menu')}>
-          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
             <Link to="/" onClick={handleClickSwitchPage}>
               Trang chủ
             </Link>
           </div>
           <div className={cx('menu-link', windowY ? 'over' : '', 'menu-drop')}>
-            <Link to="" onClick={handleClickSwitchPage}>
-              Dịch vụ
-            </Link>
+            <Link to="">Dịch vụ</Link>
             <div className={cx('drop-down')}>
-              <div className={cx('menu-link', windowY ? 'over' : '')}>
+              <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                 <Link to="/album/anh-phong" onClick={handleClickSwitchPage}>
                   Ảnh cưới chụp phòng
                 </Link>
               </div>
-              <div className={cx('menu-link', windowY ? 'over' : '')}>
+              <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                 <Link to="/album/anh-da-ngoai" onClick={handleClickSwitchPage}>
                   Ảnh cưới chụp dã ngoại
                 </Link>
               </div>
-              <div className={cx('menu-link', windowY ? 'over' : '')}>
+              <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                 <Link to="/dich-vu/anh-tre-con" onClick={handleClickSwitchPage}>
                   Ảnh trẻ con
                 </Link>
               </div>
-              <div className={cx('menu-link', windowY ? 'over' : '')}>
+              <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                 <Link to="/dich-vu/trap-an-hoi" onClick={handleClickSwitchPage}>
                   Tráp ăn hỏi
                 </Link>
               </div>
-              <div className={cx('menu-link', windowY ? 'over' : '')}>
+              <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                 <Link to="/dich-vu/album-anh-cuoi" onClick={handleClickSwitchPage}>
                   Album ảnh cưới đẹp
                 </Link>
               </div>
             </div>
           </div>
-          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
             <Link to="/quote" onClick={handleClickSwitchPage}>
               Báo giá
             </Link>
           </div>
-          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
             <Link to="/about" onClick={handleClickSwitchPage}>
               Giới thiệu
             </Link>
           </div>
-          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
             <Link to="/posts" onClick={handleClickSwitchPage}>
               Bài viết
             </Link>
@@ -103,7 +101,7 @@ function Header() {
             )}
           </div>
           <div className={cx('itemMenuToggle', !toggle ? 'hidden' : '', windowY ? 'overToggle' : '')}>
-            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
               <Link to="/" onClick={handleClickSwitchPage}>
                 Trang chủ
               </Link>
@@ -115,27 +113,27 @@ function Header() {
               <Link to="">Dịch vụ</Link>
               <div className={cx('drop-down', !dropToggle ? '' : 'click')}>
                 <div className={cx('linkMenu')}>
-                  <div className={cx('menu-link', windowY ? 'over' : '')}>
+                  <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                     <Link to="/album/anh-phong" onClick={handleClickSwitchPage}>
                       Ảnh cưới chụp phòng
                     </Link>
                   </div>
-                  <div className={cx('menu-link', windowY ? 'over' : '')}>
+                  <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                     <Link to="/album/anh-da-ngoai" onClick={handleClickSwitchPage}>
                       Ảnh cưới chụp dã ngoại
                     </Link>
                   </div>
-                  <div className={cx('menu-link', windowY ? 'over' : '')}>
+                  <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                     <Link to="/dich-vu/anh-tre-con" onClick={handleClickSwitchPage}>
                       Ảnh trẻ con
                     </Link>
                   </div>
-                  <div className={cx('menu-link', windowY ? 'over' : '')}>
+                  <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                     <Link to="/dich-vu/trap-an-hoi" onClick={handleClickSwitchPage}>
                       Tráp ăn hỏi
                     </Link>
                   </div>
-                  <div className={cx('menu-link', windowY ? 'over' : '')}>
+                  <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
                     <Link to="/dich-vu/album-anh-cuoi" onClick={handleClickSwitchPage}>
                       Album ảnh cưới đẹp
                     </Link>
@@ -143,30 +141,20 @@ function Header() {
                 </div>
               </div>
             </div>
-            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
               <Link to="/quote" onClick={handleClickSwitchPage}>
                 Báo giá
               </Link>
             </div>
-            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
               <Link to="/about" onClick={handleClickSwitchPage}>
                 Giới thiệu
               </Link>
             </div>
-            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')}>
+            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
               <Link to="/posts" onClick={handleClickSwitchPage}>
                 Bài viết
               </Link>
-            </div>
-            <div className={cx('menu-link-icon', windowY ? 'over' : '')}>
-              <a href="mailto:cameraquangdai1982@gmail.com">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>
-            </div>
-            <div className={cx('menu-link-icon', windowY ? 'over' : '')}>
-              <a href="tel:0984776485">
-                <FontAwesomeIcon icon={faPhone} />
-              </a>
             </div>
           </div>
         </nav>
