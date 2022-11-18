@@ -9,7 +9,7 @@
 
     git commit -m "Update"
 
-    git push
+    git push -f origin master
 
 
 ```
