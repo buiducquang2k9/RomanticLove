@@ -30,7 +30,7 @@ function AddPost() {
   const [input, setInput] = useState();
   const [title, setTitle] = useState('');
   if (title === '') {
-    document.title = 'Thêm bài viết';
+    document.title = 'Add post';
   } else {
     document.title = title;
   }

@@ -19,7 +19,7 @@ function ChangePass() {
       password: updateUser.password,
       username: updateUser.username,
     });
-    toast.success('Tạo bài viết thành công !', {
+    toast.success('Thay Đổi Mật Khẩu Thành Công !', {
       position: 'top-right',
       autoClose: 5000,
       hideProgressBar: false,

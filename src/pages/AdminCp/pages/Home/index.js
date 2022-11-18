@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 
 const cx = classNames.bind(styles);
 function HomeAdmin() {
+  document.title = 'Dashboard';
   return (
     <div className={cx('wrapper')}>
       Wellcome Admin <span>(Di chuột sang bên phải để hiển thị Menu)</span>
