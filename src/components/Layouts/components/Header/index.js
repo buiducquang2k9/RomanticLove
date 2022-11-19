@@ -110,7 +110,18 @@ function Header() {
               className={cx('menu-link', windowY ? 'over' : '', 'menu-drop')}
               onClick={() => setDropToggle(!dropToggle)}
             >
-              <Link to="">Dịch vụ</Link>
+              <Link to="">
+                Dịch vụ{' '}
+                {!dropToggle ? (
+                  <span>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </span>
+                ) : (
+                  <span>
+                    <ion-icon name="chevron-up-outline"></ion-icon>
+                  </span>
+                )}
+              </Link>
               <div className={cx('drop-down', !dropToggle ? '' : 'click')}>
                 <div className={cx('linkMenu')}>
                   <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>

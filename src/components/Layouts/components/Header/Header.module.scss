@@ -126,6 +126,9 @@
         }
         width: 100%;
         &.menu-drop {
+          & span {
+            font-size: 10px;
+          }
           & .drop-down {
             text-align: center;
             width: 100%;
