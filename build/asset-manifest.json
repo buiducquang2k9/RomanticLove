@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5237407.css",
-    "main.js": "/static/js/main.bbf68e6b.js",
+    "main.css": "/static/css/main.44fb5bbe.css",
+    "main.js": "/static/js/main.1defbba4.js",
     "static/js/787.c1573e15.chunk.js": "/static/js/787.c1573e15.chunk.js",
     "static/media/TongQuanAlbum.jpg": "/static/media/TongQuanAlbum.abef8f8dafe0bd99b39e.jpg",
     "static/media/Banner.jpg": "/static/media/Banner.7d8fbe26c490d34c843c.jpg",
@@ -68,12 +68,12 @@
     "static/media/TongQuanLogo.jpg": "/static/media/TongQuanLogo.fe41719cb5409cfaa653.jpg",
     "static/media/album1 (16).jpg": "/static/media/album1 (16).5d7f2d8076db910870f8.jpg",
     "index.html": "/index.html",
-    "main.b5237407.css.map": "/static/css/main.b5237407.css.map",
-    "main.bbf68e6b.js.map": "/static/js/main.bbf68e6b.js.map",
+    "main.44fb5bbe.css.map": "/static/css/main.44fb5bbe.css.map",
+    "main.1defbba4.js.map": "/static/js/main.1defbba4.js.map",
     "787.c1573e15.chunk.js.map": "/static/js/787.c1573e15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5237407.css",
-    "static/js/main.bbf68e6b.js"
+    "static/css/main.44fb5bbe.css",
+    "static/js/main.1defbba4.js"
   ]
 }

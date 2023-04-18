@@ -48,11 +48,7 @@
       &.menu-drop {
         position: relative;
         &:hover .drop-down {
-          border-bottom-left-radius: 12px;
-          border-bottom-right-radius: 12px;
           display: block;
-          border: 3px solid #000;
-          border-top-color: transparent;
         }
         & .drop-down {
           &::before {
@@ -116,7 +112,7 @@
       }
       & .menu-link {
         text-align: left;
-        padding: 20px;
+        padding: 15px;
         font-size: 15px;
         &:hover {
           text-decoration: none;
@@ -135,8 +131,8 @@
             margin: 0 auto;
             & .menu-link {
               & a {
-                padding: 0 10px;
-                border-left: 3px solid #999;
+                // padding: 0 10px;
+                // border-left: 3px solid #999;
                 color: #999;
                 font-weight: 500;
               }

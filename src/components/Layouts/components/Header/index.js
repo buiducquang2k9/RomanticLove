@@ -40,13 +40,8 @@ function Header() {
             <Link to="">Dịch vụ</Link>
             <div className={cx('drop-down')}>
               <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
-                <Link to="/album/anh-phong" onClick={handleClickSwitchPage}>
-                  Ảnh cưới chụp phòng
-                </Link>
-              </div>
-              <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
-                <Link to="/album/anh-da-ngoai" onClick={handleClickSwitchPage}>
-                  Ảnh cưới chụp dã ngoại
+                <Link to="/dich-vu/quote" onClick={handleClickSwitchPage}>
+                  Báo giá ảnh cưới
                 </Link>
               </div>
               <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
@@ -65,11 +60,6 @@ function Header() {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
-            <Link to="/quote" onClick={handleClickSwitchPage}>
-              Báo giá
-            </Link>
           </div>
           <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
             <Link to="/about" onClick={handleClickSwitchPage}>
@@ -125,13 +115,8 @@ function Header() {
               <div className={cx('drop-down', !dropToggle ? '' : 'click')}>
                 <div className={cx('linkMenu')}>
                   <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
-                    <Link to="/album/anh-phong" onClick={handleClickSwitchPage}>
-                      Ảnh cưới chụp phòng
-                    </Link>
-                  </div>
-                  <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
-                    <Link to="/album/anh-da-ngoai" onClick={handleClickSwitchPage}>
-                      Ảnh cưới chụp dã ngoại
+                    <Link to="/dich-vu/quote" onClick={handleClickSwitchPage}>
+                      Báo giá chụp ảnh cưới
                     </Link>
                   </div>
                   <div className={cx('menu-link', windowY ? 'over' : '')} onClick={handleClickSwitchPage}>
@@ -151,11 +136,6 @@ function Header() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
-              <Link to="/quote" onClick={handleClickSwitchPage}>
-                Báo giá
-              </Link>
             </div>
             <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
               <Link to="/about" onClick={handleClickSwitchPage}>
