@@ -26,6 +26,9 @@
   align-items: center;
   & .logo-title {
     color: var(--black-color);
+    & a {
+      font-weight: 700;
+    }
   }
   & .menu {
     padding-right: 15px;

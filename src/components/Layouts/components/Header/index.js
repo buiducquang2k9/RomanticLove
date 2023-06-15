@@ -29,7 +29,9 @@ function Header() {
   return (
     <div className={cx('wrapper', windowY ? 'over' : '')}>
       <div className={cx('container')}>
-        <div className={cx('logo-title', windowY ? 'over' : '')}>Áo cưới Romantic Love</div>
+        <div className={cx('logo-title', windowY ? 'over' : '')}>
+          <Link to="/">Áo cưới Romantic Love</Link>
+        </div>
         <nav className={cx('menu')}>
           <div className={cx('menu-link', windowY ? 'over' : '', 'menu-hover')} onClick={handleClickSwitchPage}>
             <Link to="/" onClick={handleClickSwitchPage}>

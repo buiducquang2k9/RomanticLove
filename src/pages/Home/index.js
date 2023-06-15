@@ -1,8 +1,8 @@
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import LogoTongQuan from './../../assets/images/TongQuanLogo.jpg';
-import AlbumTongQuan from './../../assets/images/TongQuanAlbum.jpg';
+import LogoTongQuan from './../../assets/images/Page/Home/TongQuanLogo.jpg';
+import AlbumTongQuan from './../../assets/images/Page/Home/TongQuanAlbum.jpg';
 
 const cx = classNames.bind(styles);
 function Home() {
@@ -74,16 +74,17 @@ function Home() {
         <div className={cx('fullDis', 'fullContent')}>
           <div className={cx('baoGia')}>
             <div className={cx('content')}>
-              <h1>Báo Giá Dịch Vụ</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum
-              </p>
-              <button className={cx('button')}>Xem Ngay</button>
+              <div className={cx('content-wrapper')}>
+                <h1>Báo Giá Dịch Vụ</h1>
+                <p>
+                  Dưới đây là bảng giá dịch vụ khuyến mại tại ảnh viện áo cưới Romantic Love gửi tới các bạn,ảnh viện áo
+                  cưới Romantic Love cam kết không phát sinh thêm bất kì một chi phí nào cam kết không chụp ghép như
+                  nhiều đơn vị chụp ảnh cưới khác.
+                </p>
+                <Link to="/dich-vu/quote" className={cx('button')}>
+                  Xem Ngay
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ function Footer() {
                 <Link to="/about">Giới thiệu</Link>
               </div>
               <div className={cx('link')}>
-                <Link to="/quote">Báo giá khuyến mãi</Link>
+                <Link to="/dich-vu/quote">Báo giá khuyến mãi</Link>
               </div>
               <div className={cx('link')}>
                 <Link to="/dich-vu/anh-tre-con">Ảnh trẻ con</Link>
@@ -52,6 +52,13 @@ function Footer() {
                 <div className={cx('footer-contact-item-content')}>
                   <h4>- Cơ Sở 2:</h4>
                   <h4>Cầu Cao, TT.Cát Thành, Trực Ninh, Nam Định</h4>
+                </div>
+              </div>
+              <div className={cx('footer-contact-item')}>
+                <FontAwesomeIcon icon={faLocationDot} />
+                <div className={cx('footer-contact-item-content')}>
+                  <h4>- Cơ Sở 3:</h4>
+                  <h4>Cầu vô tình, Trực Ninh, Nam Định</h4>
                 </div>
               </div>
               <div className={cx('footer-contact-item')}>
