@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cf09b0fa.css",
-    "main.js": "/static/js/main.dffa7bfe.js",
+    "main.js": "/static/js/main.d3e6c1fb.js",
     "static/js/787.c1573e15.chunk.js": "/static/js/787.c1573e15.chunk.js",
     "static/media/TongQuanAlbum.jpg": "/static/media/TongQuanAlbum.abef8f8dafe0bd99b39e.jpg",
     "static/media/Banner.jpg": "/static/media/Banner.7d8fbe26c490d34c843c.jpg",
@@ -57,7 +57,6 @@
     "static/media/album2 (8).jpg": "/static/media/album2 (8).c11e5d536cafff774712.jpg",
     "static/media/album2 (3).jpg": "/static/media/album2 (3).916ba40e58767e972295.jpg",
     "static/media/album2 (11).jpg": "/static/media/album2 (11).f7ef9a4d5181923dcf74.jpg",
-    "static/media/404Img.jpg": "/static/media/404Img.80dfb313b17ca0865b00.jpg",
     "static/media/album2 (4).jpg": "/static/media/album2 (4).2c1f045b3031d2858967.jpg",
     "static/media/album2 (10).jpg": "/static/media/album2 (10).95f7498dea210a223639.jpg",
     "static/media/album1 (9).jpg": "/static/media/album1 (9).89695d28b2272d9ee968.jpg",
@@ -67,13 +66,14 @@
     "static/media/album1 (3).jpg": "/static/media/album1 (3).fb00c655d028c47b5c26.jpg",
     "static/media/TongQuanLogo.jpg": "/static/media/TongQuanLogo.fe41719cb5409cfaa653.jpg",
     "static/media/album1 (16).jpg": "/static/media/album1 (16).5d7f2d8076db910870f8.jpg",
+    "static/media/404Img.jpg": "/static/media/404Img.45d0770b827a5f84c11c.jpg",
     "index.html": "/index.html",
     "main.cf09b0fa.css.map": "/static/css/main.cf09b0fa.css.map",
-    "main.dffa7bfe.js.map": "/static/js/main.dffa7bfe.js.map",
+    "main.d3e6c1fb.js.map": "/static/js/main.d3e6c1fb.js.map",
     "787.c1573e15.chunk.js.map": "/static/js/787.c1573e15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf09b0fa.css",
-    "static/js/main.dffa7bfe.js"
+    "static/js/main.d3e6c1fb.js"
   ]
 }
