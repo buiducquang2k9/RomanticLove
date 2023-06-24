@@ -11,6 +11,5 @@
 
     git push -f origin main
 
-
-
+    Hết !
 ```
